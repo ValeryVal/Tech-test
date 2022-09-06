@@ -14,7 +14,7 @@ class Figures:
 
 class Square(Figures):
 
-    def __init__(self, *top_right: list, side: int):
+    def __init__(self, top_right: list, side: int):
 
         self.top_right = top_right
         self.side = side
@@ -28,7 +28,7 @@ class Square(Figures):
 
 class Rectangle(Figures):
 
-    def __init__(self, top_right=list, bottom_left=list):
+    def __init__(self, top_right: list, bottom_left: list):
         self.top_right = top_right
         self.bottom_left = bottom_left
 
@@ -47,7 +47,7 @@ class Rectangle(Figures):
 
 class Circle(Figures):
 
-    def __init__(self, center: list, radius):
+    def __init__(self, center: list, radius: int):
         self.center = center
         self.radius = radius
 
